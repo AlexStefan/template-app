@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    local:MvxBind="BackgroundColor NativeColor(ViewBackgroundColor)">
+  <Button
+      android:id="@+id/btLogin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Test"
+      android:textSize="25sp"
+      local:MvxBind="BackgroundColor NativeColor(BackgroundColor); TextColor NativeColor(TextColor)" />
+  <TextView
+      android:id="@+id/tvText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Lots of random text"/>
+</LinearLayout>
