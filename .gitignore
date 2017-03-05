@@ -250,3 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+TemplateMenu/Template.Droid/TemplateMenu.Droid.csproj.bak
