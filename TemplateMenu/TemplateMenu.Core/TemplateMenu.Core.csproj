@@ -38,6 +38,7 @@
     <Compile Include="AppStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\RootViewModel.cs" />
     <Compile Include="ViewModels\SecondViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
