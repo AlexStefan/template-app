@@ -36,6 +36,5 @@ namespace TemplateMenu.Droid
 
             return mvxFragmentsPresenter;
         }
-
     }
 }

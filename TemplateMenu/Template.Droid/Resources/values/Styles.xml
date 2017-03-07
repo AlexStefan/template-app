@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <style name="Theme.Main" parent="@style/Theme.AppCompat.Light">
-    <item name="android:windowTranslucentStatus">true</item>
-    <item name="android:fitsSystemWindows">true</item>
-    <item name="android:statusBarColor">@color/green</item>
+  <style name="Theme.Main" parent="@style/Theme.AppCompat.Light.NoActionBar">
   </style>
 </resources>

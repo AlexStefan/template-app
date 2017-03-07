@@ -1869,12 +1869,6 @@ namespace TemplateMenu.Droid
 			// aapt resource value: 0x7f0a0024
 			public const int bottom = 2131361828;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int btnLeftToolbar = 2131361912;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int btnRightToolbar = 2131361914;
-			
 			// aapt resource value: 0x7f0a0030
 			public const int buttonPanel = 2131361840;
 			
@@ -2132,9 +2126,6 @@ namespace TemplateMenu.Droid
 			
 			// aapt resource value: 0x7f0a005f
 			public const int txtHeader = 2131361887;
-			
-			// aapt resource value: 0x7f0a0079
-			public const int txtTitle = 2131361913;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int up = 2131361800;
