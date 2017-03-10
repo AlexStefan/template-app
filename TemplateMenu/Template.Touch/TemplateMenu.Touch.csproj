@@ -6,7 +6,7 @@
     <ProjectGuid>{B4234D44-AF7C-4C9A-9B6F-D59B0DF71A00}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Template.Touch</RootNamespace>
+    <RootNamespace>TemplateMenu.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>Template.Touch</AssemblyName>
   </PropertyGroup>
@@ -96,6 +96,22 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <None Include="packages.config" />
     <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="Views\RootView.xib" />
+    <Compile Include="Views\RootView.cs" />
+    <Compile Include="Views\RootView.designer.cs">
+      <DependentUpon>RootView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\MenuView.xib" />
+    <Compile Include="Views\MenuView.cs" />
+    <Compile Include="Views\MenuView.designer.cs">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\SidebarPresenter.cs" />
+    <InterfaceDefinition Include="Views\BaseView.xib" />
+    <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\BaseView.designer.cs">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -130,9 +146,21 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TemplateMenu.Core\TemplateMenu.Core.csproj">
+      <Project>{9EE5224B-D834-41F0-9DB6-0B5642819D37}</Project>
+      <Name>TemplateMenu.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presenters\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
