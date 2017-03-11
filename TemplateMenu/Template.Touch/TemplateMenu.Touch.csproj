@@ -107,10 +107,10 @@
       <DependentUpon>MenuView.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenters\SidebarPresenter.cs" />
-    <InterfaceDefinition Include="Views\BaseView.xib" />
-    <Compile Include="Views\BaseView.cs" />
-    <Compile Include="Views\BaseView.designer.cs">
-      <DependentUpon>BaseView.cs</DependentUpon>
+    <InterfaceDefinition Include="Views\SecondView.xib" />
+    <Compile Include="Views\SecondView.cs" />
+    <Compile Include="Views\SecondView.designer.cs">
+      <DependentUpon>SecondView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

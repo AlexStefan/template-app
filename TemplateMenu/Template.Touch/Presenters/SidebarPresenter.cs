@@ -12,9 +12,7 @@ namespace Template.Touch
 
 		protected override UINavigationController CreateNavigationController(UIViewController viewController)
 		{
-			var navBar = base.CreateNavigationController(viewController);
-			//navBar.NavigationBarHidden = true;
-			return navBar;
+			return base.CreateNavigationController(viewController);
 		}
 	}
 }

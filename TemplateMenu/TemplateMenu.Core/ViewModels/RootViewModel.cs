@@ -6,6 +6,28 @@ namespace TemplateMenu.Core.ViewModels
 {
     public class RootViewModel : MvxViewModel
     {
+		private MainViewModel home;
+		public MainViewModel Home
+		{
+			get { return home; }
+			set
+			{
+				home = value;
+				RaisePropertyChanged(() => Home);
+			}
+		}
+
+		private MenuViewModel menu;
+		public MenuViewModel Menu
+		{
+			get { return menu; }
+			set
+			{
+				menu = value;
+				RaisePropertyChanged(() => Menu);
+			}
+		}
+
         private MvxCommand mainScreenCommand;
         public ICommand MainScreenCommand
         {
@@ -35,5 +57,11 @@ namespace TemplateMenu.Core.ViewModels
         {
             ShowViewModel<SecondViewModel>();
         }
+
+		public RootViewModel()
+		{
+			Home = new MainViewModel();
+			Menu = new MenuViewModel();
+		}
     }
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
     <dependencies>
-        <deployment identifier="iOS"/>
         <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondView">
             <connections>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
             </connections>
@@ -16,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-A0-wAw">
-                    <rect key="frame" x="168.5" y="323" width="37" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa2-Cr-RIV">
+                    <rect key="frame" x="158" y="323" width="58.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -25,8 +24,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="3cd-A0-wAw" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="4zT-mJ-WUj"/>
-                <constraint firstItem="3cd-A0-wAw" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="dfd-MX-h7m"/>
+                <constraint firstItem="wa2-Cr-RIV" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="Bb2-jS-GTw"/>
+                <constraint firstItem="wa2-Cr-RIV" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="QjN-6Q-AjO"/>
             </constraints>
         </view>
     </objects>

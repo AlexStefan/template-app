@@ -9,10 +9,10 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace Template.Touch
+namespace TemplateMenu.Touch
 {
-	[Register("BaseView")]
-	partial class BaseView
+	[Register("SecondView")]
+	partial class SecondView
 	{
 		void ReleaseDesignerOutlets()
 		{

@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Xamarin Studio from the outlets and
 // actions declared in your storyboard file.
@@ -11,11 +11,11 @@ using UIKit;
 
 namespace Template.Touch
 {
-	[Register("RootView")]
-	partial class RootView
-	{
-		void ReleaseDesignerOutlets()
-		{
-		}
-	}
+    [Register ("RootView")]
+    partial class RootView
+    {
+        void ReleaseDesignerOutlets ()
+        {
+        }
+    }
 }

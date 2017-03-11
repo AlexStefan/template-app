@@ -1,7 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Views;
 using SidebarNavigation;
-using TemplateMenu.Core;
 using TemplateMenu.Core.ViewModels;
 using UIKit;
 
@@ -9,9 +8,9 @@ namespace Template.Touch
 {
 	public partial class RootView : MvxViewController
 	{
-		public BaseViewModel RootViewModel
+		public RootViewModel RootViewModel
 		{
-			get { return (BaseViewModel)ViewModel; }
+			get { return (RootViewModel)ViewModel; }
 			set { ViewModel = value; }
 		}
 

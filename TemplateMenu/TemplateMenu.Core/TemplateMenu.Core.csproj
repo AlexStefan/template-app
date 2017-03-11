@@ -41,7 +41,6 @@
     <Compile Include="ViewModels\RootViewModel.cs" />
     <Compile Include="ViewModels\SecondViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
-    <Compile Include="ViewModels\BaseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

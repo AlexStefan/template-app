@@ -7,7 +7,7 @@ namespace TemplateMenu.Core
     {
         public void Start(object hint = null)
         {
-			ShowViewModel<BaseViewModel>();
+			ShowViewModel<RootViewModel>();
         }
     }
 }
