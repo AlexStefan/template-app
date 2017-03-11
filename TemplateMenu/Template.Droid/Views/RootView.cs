@@ -43,6 +43,8 @@ namespace TemplateMenu.Droid.Views
             drawerLayout.AddDrawerListener(drawerToggle);
             drawerToggle.SyncState();
             drawerLayout.CloseDrawer(drawerMenu);
+
+			ViewModel.MainScreenCommand.Execute(null);
         }
 
         private void SetMenu()
