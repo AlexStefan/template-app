@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
-  <dependencies>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703" />
-  </dependencies>
-  <objects>
-    <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView">
-      <connections>
-        <outlet property="view" destination="2" id="RRd-Eg-VrN" />
-      </connections>
-    </placeholder>
-    <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder" />
-    <view contentMode="scaleToFill" id="2">
-      <rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-      <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-    </view>
-  </objects>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="GeneralLabel" destination="czw-ul-sJV" id="name-outlet-czw-ul-sJV"/>
+                <outlet property="TestLabel" destination="0Wt-Sb-hni" id="name-outlet-0Wt-Sb-hni"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sq1-Ic-ibq">
+                    <rect key="frame" x="163" y="349" width="49" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="General Setting" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czw-ul-sJV" restorationIdentifier="GeneralLabel">
+                    <rect key="frame" x="127" y="319" width="122" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <accessibility key="accessibilityConfiguration" identifier="GeneralSettings"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="sq1-Ic-ibq" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="0Wt-Sb-hni"/>
+                <constraint firstItem="czw-ul-sJV" firstAttribute="centerX" secondItem="sq1-Ic-ibq" secondAttribute="centerX" id="1uo-dR-CjV"/>
+                <constraint firstItem="czw-ul-sJV" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="OiX-kv-Wqy"/>
+                <constraint firstItem="sq1-Ic-ibq" firstAttribute="top" secondItem="czw-ul-sJV" secondAttribute="bottom" id="n8Y-we-eh1"/>
+            </constraints>
+        </view>
+    </objects>
 </document>

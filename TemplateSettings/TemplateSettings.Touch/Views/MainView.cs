@@ -1,4 +1,6 @@
+using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
+using TemplateSettings.Core.ViewModels;
 
 namespace TemplateSettings.Touch.Views
 {
@@ -19,7 +21,8 @@ namespace TemplateSettings.Touch.Views
         {
             base.ViewDidLoad();
 
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            this.CreateBinding(GeneralLabel).To((MainViewModel vm) => vm.GeneralSetting).Apply();
         }
     }
 }
