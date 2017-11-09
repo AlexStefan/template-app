@@ -7,7 +7,7 @@
     <Mvx.MvxExpandableListView
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          local:MvxBind="ItemsSource Items"
+          local:MvxBind="ItemsSource Items; ItemClick ShowMoreDetailsCommand"
           local:MvxItemTemplate="@layout/details_item"
           local:MvxGroupItemTemplate="@layout/main_item" />
 </LinearLayout>

@@ -1,5 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace ExpandableList.Core.ViewModels
 {
@@ -19,12 +20,29 @@ namespace ExpandableList.Core.ViewModels
             }
         }
 
+        private ICommand showMoreDetailsCommand;
+        public ICommand ShowMoreDetailsCommand
+        {
+            get
+            {
+                if (showMoreDetailsCommand == null)
+                    showMoreDetailsCommand = new MvxCommand<object>(ShowMoreDetails);
+
+                return showMoreDetailsCommand;
+            }
+        }
+
+        private void ShowMoreDetails(object obj)
+        {
+            var onlyForDebug = "working";
+        }
+
         public MainViewModel()
         {
             Items = new ObservableCollection<MainItemViewModel>();
             for (int i = 0; i < 5; i++)
             {
-                var mainItem = new MainItemViewModel($"Item nr. {i}");
+                var mainItem = new MainItemViewModel($"text {i}");
                 Items.Add(mainItem);
             }
             RaisePropertyChanged(() => Items);
