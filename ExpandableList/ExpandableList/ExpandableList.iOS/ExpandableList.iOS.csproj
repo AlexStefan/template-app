@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>d9d11d14-1ed9-419d-815f-6cfc37ec8bff</ProjectGuid>
+    <ProjectGuid>{D9D11D14-1ED9-419D-815F-6CFC37EC8BFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ExpandableList.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
@@ -67,8 +67,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExpandableList\ExpandableList.csproj">
-      <Name>ExpandableList</Name>
+    <ProjectReference Include="..\ExpandableList\ExpandableList.Core.csproj">
+      <Name>ExpandableList.Core</Name>
+      <Project>{BABC9C7B-F096-4601-8ABC-CD490AE7B995}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandableList.Android", "ExpandableList\ExpandableList.Android\ExpandableList.Android.csproj", "{BC1B6388-90C1-41AE-8E80-996F478D1FC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandableList.iOS", "ExpandableList\ExpandableList.iOS\ExpandableList.iOS.csproj", "{D9D11D14-1ED9-419D-815F-6CFC37EC8BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandableList", "ExpandableList\ExpandableList\ExpandableList.csproj", "{BABC9C7B-F096-4601-8ABC-CD490AE7B995}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandableList.Core", "ExpandableList\ExpandableList\ExpandableList.Core.csproj", "{BABC9C7B-F096-4601-8ABC-CD490AE7B995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
