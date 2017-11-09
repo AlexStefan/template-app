@@ -148,15 +148,17 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\mainitem.axml">
+    <AndroidResource Include="Resources\layout\main_item.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\expandeditem.axml">
+    <AndroidResource Include="Resources\layout\details_item.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\MainView.axml" />
+    <AndroidResource Include="Resources\layout\MainView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />

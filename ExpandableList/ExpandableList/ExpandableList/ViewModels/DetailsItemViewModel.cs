@@ -2,10 +2,10 @@
 
 namespace ExpandableList.Core.ViewModels
 {
-    public class SecondItemViewModel
+    public class DetailsItemViewModel
     {
-        private SecondItem item;
-        public SecondItem Item
+        private DetailsItem item;
+        public DetailsItem Item
         {
             get
             {
@@ -17,9 +17,9 @@ namespace ExpandableList.Core.ViewModels
             }
         }
 
-        public SecondItemViewModel(string firstText, string secondText)
+        public DetailsItemViewModel(string firstText, string secondText)
         {
-            Item = new SecondItem(firstText, secondText);
+            Item = new DetailsItem(firstText, secondText);
         }
     }
 }

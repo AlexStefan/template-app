@@ -1,9 +1,11 @@
 ﻿using ExpandableList.Core.Models;
+using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
+using System.Windows.Input;
 
 namespace ExpandableList.Core.ViewModels
 {
-    public class MainItemViewModel : List<SecondItemViewModel>
+    public class MainItemViewModel : List<DetailsItemViewModel>
     {
         private MainItem item;
         public MainItem Item
@@ -18,15 +20,32 @@ namespace ExpandableList.Core.ViewModels
             }
         }
 
-        public MainItemViewModel(string firstText, string secondText)
+
+        private ICommand sampleCommand;
+        public ICommand SampleCommand
         {
-            Item = new MainItem(firstText, secondText);
-            base.AddRange(new List<SecondItemViewModel> { new SecondItemViewModel("bla", "bla1"),
-                                             new SecondItemViewModel("bla", "bla2"),
-                                             new SecondItemViewModel("bla", "bla3"),
-                                             new SecondItemViewModel("bla", "bla4"),
-                                             new SecondItemViewModel("bla", "bla5"),
-                                             new SecondItemViewModel("bla", "bla6") });
+            get
+            {
+                if (sampleCommand == null)
+                    sampleCommand = new MvxCommand<object>(FireSample);
+                return sampleCommand;
+            }
+        }
+
+        private void FireSample(object obj)
+        {
+            var onlyForDebug = "working";
+        }
+
+        public MainItemViewModel(string title)
+        {
+            Item = new MainItem(title);
+            base.AddRange(new List<DetailsItemViewModel> { new DetailsItemViewModel("bla", "bla1"),
+                                             new DetailsItemViewModel("bla", "bla2"),
+                                             new DetailsItemViewModel("bla", "bla3"),
+                                             new DetailsItemViewModel("bla", "bla4"),
+                                             new DetailsItemViewModel("bla", "bla5"),
+                                             new DetailsItemViewModel("bla", "bla6") });
         }
     }
 }

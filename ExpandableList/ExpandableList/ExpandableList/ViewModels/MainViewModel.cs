@@ -24,7 +24,7 @@ namespace ExpandableList.Core.ViewModels
             Items = new ObservableCollection<MainItemViewModel>();
             for (int i = 0; i < 5; i++)
             {
-                var mainItem = new MainItemViewModel($"text {i}", $"description {i}");
+                var mainItem = new MainItemViewModel($"Item nr. {i}");
                 Items.Add(mainItem);
             }
             RaisePropertyChanged(() => Items);

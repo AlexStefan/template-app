@@ -1,8 +1,6 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Util;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using System;
 
 namespace ExpandableList.Droid.Views
 {
@@ -11,15 +9,8 @@ namespace ExpandableList.Droid.Views
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            try
-            {
-                base.OnCreate(savedInstanceState);
-                SetContentView(Resource.Layout.MainView);
-            }
-            catch (Exception ex)
-            {
-                Log.Debug("Teeeeeeeeeeeeeeeeeeeeeeeest", ex.Message);
-            }
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.MainView);
         }
     }
 }

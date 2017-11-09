@@ -6523,10 +6523,10 @@ namespace ExpandableList.Droid
 			public const int design_text_input_password_icon = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int expandeditem = 2130903081;
+			public const int details_item = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mainitem = 2130903082;
+			public const int main_item = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
 			public const int MainView = 2130903083;

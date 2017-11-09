@@ -3,12 +3,10 @@
     public class MainItem
     {
         public string Title { get; set; }
-        public string SecondText { get; set; }
 
-        public MainItem(string firstText, string secondText)
+        public MainItem(string title)
         {
-            Title = firstText;
-            SecondText = secondText;
+            Title = title;
         }
     }
 }
