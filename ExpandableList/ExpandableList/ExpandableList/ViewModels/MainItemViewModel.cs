@@ -1,5 +1,4 @@
 ﻿using ExpandableList.Core.Models;
-using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 
 namespace ExpandableList.Core.ViewModels
