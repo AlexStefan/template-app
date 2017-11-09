@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.ExpandableList.Android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ExpandableList.Android">
 	<uses-sdk android:minSdkVersion="21" />
-	<application android:label="ExpandableList.Android" android:icon="@drawable/Icon"></application>
+	<application android:label="ExpandableList.Android" android:icon="@drawable/Icon"  android:theme="@style/Theme.AppCompat.Light" ></application>
 </manifest>
