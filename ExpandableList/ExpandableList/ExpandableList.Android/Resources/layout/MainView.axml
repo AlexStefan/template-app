@@ -4,9 +4,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Mvx.MvxListView
+    <Mvx.MvxExpandableListView
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           local:MvxBind="ItemsSource Items;"
-          local:MvxItemTemplate="@layout/mainitem" />
+          local:MvxItemTemplate="@layout/expandeditem"
+          local:MvxGroupItemTemplate="@layout/mainitem" />
 </LinearLayout>

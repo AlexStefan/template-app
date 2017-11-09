@@ -1,13 +1,13 @@
 ﻿using MvvmCross.Core.ViewModels;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace ExpandableList.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel
     {
-        private List<MainItemViewModel> items;
+        private ObservableCollection<MainItemViewModel> items;
 
-        public List<MainItemViewModel> Items
+        public ObservableCollection<MainItemViewModel> Items
         {
             get
             {
@@ -21,7 +21,7 @@ namespace ExpandableList.Core.ViewModels
 
         public MainViewModel()
         {
-            Items = new List<MainItemViewModel>();
+            Items = new ObservableCollection<MainItemViewModel>();
             for (int i = 0; i < 5; i++)
             {
                 var mainItem = new MainItemViewModel($"text {i}", $"description {i}");
