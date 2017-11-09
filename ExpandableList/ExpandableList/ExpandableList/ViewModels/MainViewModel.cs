@@ -34,7 +34,7 @@ namespace ExpandableList.Core.ViewModels
 
         private void ShowMoreDetails(object obj)
         {
-            var onlyForDebug = "working";
+            ShowViewModel<DetailsViewModel>();
         }
 
         public MainViewModel()

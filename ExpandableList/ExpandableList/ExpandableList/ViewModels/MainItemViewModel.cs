@@ -20,7 +20,6 @@ namespace ExpandableList.Core.ViewModels
             }
         }
 
-
         private ICommand sampleCommand;
         public ICommand SampleCommand
         {
