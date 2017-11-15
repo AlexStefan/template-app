@@ -67,12 +67,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExpandableList\ExpandableList.Core.csproj">
-      <Name>ExpandableList.Core</Name>
-      <Project>{BABC9C7B-F096-4601-8ABC-CD490AE7B995}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>

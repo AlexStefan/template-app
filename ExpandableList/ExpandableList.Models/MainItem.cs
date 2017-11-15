@@ -1,4 +1,4 @@
-﻿namespace ExpandableList.Core.Models
+﻿namespace ExpandableList.Models
 {
     public class MainItem
     {

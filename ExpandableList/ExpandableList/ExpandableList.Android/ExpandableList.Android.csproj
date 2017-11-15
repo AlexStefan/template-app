@@ -171,8 +171,8 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExpandableList\ExpandableList.Core.csproj">
-      <Project>{babc9c7b-f096-4601-8abc-cd490ae7b995}</Project>
+    <ProjectReference Include="..\..\ExpandableList.Core\ExpandableList.Core.csproj">
+      <Project>{2b721ef4-c8fd-40c3-88b7-4c95f2a38c06}</Project>
       <Name>ExpandableList.Core</Name>
     </ProjectReference>
   </ItemGroup>

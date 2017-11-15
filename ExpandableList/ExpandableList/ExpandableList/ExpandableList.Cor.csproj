@@ -33,8 +33,6 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="AppStart.cs" />
-    <Compile Include="Models\MainItem.cs" />
-    <Compile Include="Models\DetailsItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\DetailsViewModel.cs" />
     <Compile Include="ViewModels\MainItemViewModel.cs" />
@@ -58,6 +56,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExpandableList.Models\ExpandableList.Models.csproj">
+      <Project>{4c28f1ea-bb99-4915-a27b-e68bc0385f41}</Project>
+      <Name>ExpandableList.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

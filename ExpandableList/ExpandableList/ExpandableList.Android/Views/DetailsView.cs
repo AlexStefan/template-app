@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using System;
 
 namespace ExpandableList.Droid.Views
 {
@@ -9,9 +10,14 @@ namespace ExpandableList.Droid.Views
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);
+            try
+            {
+                base.OnCreate(savedInstanceState);
+            }
+            catch (Exception ex)
+            {
 
-            // Create your application here
+            }
         }
     }
 }

@@ -35,7 +35,7 @@ namespace ExpandableList.Core.ViewModels
         private void ShowMoreDetails(object obj)
         {
             var selectedItem = obj as DetailsItemViewModel;
-            ShowViewModel<DetailsViewModel>(new { selectedItem.Item.FirstText });
+            ShowViewModel<DetailsViewModel, DetailsItemViewModel>(selectedItem);
         }
 
         public MainViewModel()
