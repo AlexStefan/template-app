@@ -126,6 +126,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="TestAdapter.cs" />
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Views\RootView.cs" />
     <Compile Include="Views\SecondView.cs" />
