@@ -9,17 +9,6 @@ namespace FragmentManger.Core.ViewModels
     {
         private readonly IMvxNavigationService navigationService;
 
-        private MainViewModel home;
-        public MainViewModel Home
-        {
-            get { return home; }
-            set
-            {
-                home = value;
-                RaisePropertyChanged(() => Home);
-            }
-        }
-
         private MenuViewModel menu;
         public MenuViewModel Menu
         {
@@ -29,21 +18,6 @@ namespace FragmentManger.Core.ViewModels
                 menu = value;
                 RaisePropertyChanged(() => Menu);
             }
-        }
-
-        private MvxCommand mainScreenCommand;
-        public ICommand MainScreenCommand
-        {
-            get
-            {
-                mainScreenCommand = mainScreenCommand ?? new MvxCommand(async () => await ShowMainScreen());
-                return mainScreenCommand;
-            }
-        }
-
-        private async Task ShowMainScreen()
-        {
-            await navigationService.Navigate<MainViewModel>();
         }
 
         private MvxCommand secondScreenCommand;
@@ -64,7 +38,6 @@ namespace FragmentManger.Core.ViewModels
         public RootViewModel(IMvxNavigationService navigationService)
         {
             this.navigationService = navigationService;
-            Home = new MainViewModel();
             Menu = new MenuViewModel();
         }
     }
