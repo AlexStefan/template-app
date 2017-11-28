@@ -4329,6 +4329,9 @@ namespace FragmentManger.Droid
 			// aapt resource value: 0x7f08003e
 			public const int bottom = 2131230782;
 			
+			// aapt resource value: 0x7f08009b
+			public const int bottom_navigation = 2131230875;
+			
 			// aapt resource value: 0x7f080064
 			public const int buttonPanel = 2131230820;
 			
@@ -4502,6 +4505,15 @@ namespace FragmentManger.Droid
 			
 			// aapt resource value: 0x7f0800aa
 			public const int media_actions = 2131230890;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int menu_audio = 2131230908;
+			
+			// aapt resource value: 0x7f0800bb
+			public const int menu_home = 2131230907;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int menu_video = 2131230909;
 			
 			// aapt resource value: 0x7f0800b8
 			public const int message = 2131230904;
@@ -4677,9 +4689,6 @@ namespace FragmentManger.Droid
 			// aapt resource value: 0x7f080088
 			public const int submit_area = 2131230856;
 			
-			// aapt resource value: 0x7f08009a
-			public const int tabLayout = 2131230874;
-			
 			// aapt resource value: 0x7f080020
 			public const int tabMode = 2131230752;
 			
@@ -4755,8 +4764,8 @@ namespace FragmentManger.Droid
 			// aapt resource value: 0x7f080027
 			public const int useLogo = 2131230759;
 			
-			// aapt resource value: 0x7f08009b
-			public const int viewPager = 2131230875;
+			// aapt resource value: 0x7f08009a
+			public const int viewPager = 2131230874;
 			
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
@@ -5033,6 +5042,22 @@ namespace FragmentManger.Droid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0e0000
+			public const int bottom_navigation_main = 2131623936;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
