@@ -20,19 +20,19 @@ namespace FragmentManger.Core.ViewModels
             }
         }
 
-        private MvxCommand secondScreenCommand;
-        public ICommand SecondScreenCommand
+        private MvxCommand aboutScreenCommand;
+        public ICommand AboutScreenCommand
         {
             get
             {
-                secondScreenCommand = secondScreenCommand ?? new MvxCommand(async () => await ShowSecondScreen());
-                return secondScreenCommand;
+                aboutScreenCommand = aboutScreenCommand ?? new MvxCommand(async () => await ShowAboutScreen());
+                return aboutScreenCommand;
             }
         }
 
-        private async Task ShowSecondScreen()
+        private async Task ShowAboutScreen()
         {
-            await navigationService.Navigate<SecondViewModel>();
+            await navigationService.Navigate<AboutViewModel>();
         }
 
         public RootViewModel(IMvxNavigationService navigationService)

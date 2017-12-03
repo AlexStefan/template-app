@@ -12,10 +12,4 @@
       android:icon="@drawable/ic_home_white_24dp"
       android:title="Tab 2"
       android:showAsAction="always" />
-  <item
-      android:id="@+id/menu_video"
-      android:enabled="true"
-      android:icon="@drawable/ic_home_white_24dp"
-      android:title="Tab 3"
-      android:showAsAction="always" />
 </menu>

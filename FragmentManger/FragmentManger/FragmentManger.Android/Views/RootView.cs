@@ -85,13 +85,7 @@ namespace FragmentManger.Droid.Views
         {
             var home = drawerLayout.FindViewById<LinearLayout>(Resource.Id.lytHome);
             home.Click += (sender, e) => {
-                ViewModel.SecondScreenCommand.Execute(null);
-                drawerLayout.CloseDrawer(drawerMenu);
-            };
-
-            var second = drawerLayout.FindViewById<LinearLayout>(Resource.Id.lytSecondView);
-            second.Click += (sender, e) => {
-                ViewModel.SecondScreenCommand.Execute(null);
+                ViewModel.AboutScreenCommand.Execute(null);
                 drawerLayout.CloseDrawer(drawerMenu);
             };
         }
