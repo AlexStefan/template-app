@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationService.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationService.iOS", "CommunicationService\CommunicationService.iOS\CommunicationService.iOS.csproj", "{86E8F51E-8850-41DD-B0F2-5EA5830B340A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationService", "CommunicationService\CommunicationService\CommunicationService.csproj", "{16CDE01C-05DF-416D-8365-A929816573A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationService.Core", "CommunicationService\CommunicationService.Core\CommunicationService.Core.csproj", "{16CDE01C-05DF-416D-8365-A929816573A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
