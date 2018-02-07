@@ -1,13 +1,9 @@
-﻿using MvvmCross.Platform.IoC;
-using MvvmCross.Plugins.JsonLocalization;
+﻿using MvvmCross.Plugins.JsonLocalization;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 namespace Internationalization.Core.Services
 {
-    public class TextProviderBuilder
-        : MvxTextProviderBuilder
+    public class TextProviderBuilder : MvxTextProviderBuilder
     {
         public TextProviderBuilder()
             : base(Constants.GeneralNamespace, Constants.RootFolderForResources)
@@ -18,13 +14,7 @@ namespace Internationalization.Core.Services
         {
             get
             {
-                var dictionary = this.GetType()
-                    .GetTypeInfo()
-                    .Assembly
-                    .CreatableTypes()
-                    .ToDictionary(t => t.Name, t => t.Name);
-
-                return dictionary;
+                return new Dictionary<string, string> { { "strings", "strings" } };
             }
         }
     }

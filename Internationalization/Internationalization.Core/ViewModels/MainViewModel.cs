@@ -11,12 +11,12 @@ namespace Internationalization.Core.ViewModels
         public MainViewModel(IMvxTextProviderBuilder builder)
         {
             _builder = builder;
-            _builder.LoadResources("en");
+            _builder.LoadResources("ro");
         }
 
         public IMvxLanguageBinder TextSource
         {
-            get { return new MvxLanguageBinder(Constants.GeneralNamespace, GetType().Name); }
+            get { return new MvxLanguageBinder(Constants.GeneralNamespace, "strings"); }
         }
     }
 }

@@ -103,9 +103,9 @@
     <Compile Include="Views\MainView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Strings\en\MainViewModel.json" />
-    <AndroidAsset Include="Assets\Strings\ro\MainViewModel.json" />
-    <AndroidAsset Include="Assets\MainViewModel.json" />
+    <AndroidAsset Include="Assets\Strings\en\strings.json" />
+    <AndroidAsset Include="Assets\Strings\ro\strings.json" />
+    <AndroidAsset Include="Assets\strings.json" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
