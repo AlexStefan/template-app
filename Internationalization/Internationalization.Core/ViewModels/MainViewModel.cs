@@ -11,7 +11,6 @@ namespace Internationalization.Core.ViewModels
         public MainViewModel(IMvxTextProviderBuilder builder)
         {
             _builder = builder;
-            _builder.LoadResources("ro");
         }
 
         public IMvxLanguageBinder TextSource

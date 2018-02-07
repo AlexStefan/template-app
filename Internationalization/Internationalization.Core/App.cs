@@ -13,13 +13,17 @@ namespace Internationalization.Core
         {
             CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
 
-            var builder = new TextProviderBuilder();
-            Mvx.RegisterSingleton<IMvxTextProviderBuilder>(builder);
-            Mvx.RegisterSingleton<IMvxTextProvider>(builder.TextProvider);
-
             Mvx.ConstructAndRegisterSingleton<IMvxAppStart, AppStart>();
             var appStart = Mvx.Resolve<IMvxAppStart>();
             RegisterAppStart(appStart);
+        }
+
+        public void RegisterTextProvider(string currentLanguage)
+        { 
+            var builder = new TextProviderBuilder();
+            Mvx.RegisterSingleton<IMvxTextProviderBuilder>(builder);
+            Mvx.RegisterSingleton<IMvxTextProvider>(builder.TextProvider);
+            builder.LoadResources(currentLanguage);
         }
     }
 }

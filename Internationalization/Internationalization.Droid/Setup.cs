@@ -2,6 +2,7 @@ using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
 using Internationalization.Core;
+using Java.Util;
 
 namespace Internationalization.Droid
 {
@@ -13,7 +14,9 @@ namespace Internationalization.Droid
 
         protected override IMvxApplication CreateApp()
         {
-            return new App();
+            var app = new App();
+            app.RegisterTextProvider(Locale.Default.Language);
+            return app;
         }
     }
 }
