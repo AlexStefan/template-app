@@ -1,3 +1,4 @@
 ﻿{
-    "Hello": "Hello"
+  "Hello": "Hello",
+  "DynamicValue": "Value"
 }

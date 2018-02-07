@@ -1,3 +1,4 @@
 ﻿{
-  "Hello": "Buna"
+  "Hello": "Buna",
+  "DynamicValue": "Valoare dinamica"
 }
