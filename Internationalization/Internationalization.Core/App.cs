@@ -4,6 +4,7 @@ using MvvmCross.Localization;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 using MvvmCross.Plugins.JsonLocalization;
+using System;
 
 namespace Internationalization.Core
 {
@@ -23,7 +24,10 @@ namespace Internationalization.Core
             var builder = new TextProviderBuilder();
             Mvx.RegisterSingleton<IMvxTextProviderBuilder>(builder);
             Mvx.RegisterSingleton<IMvxTextProvider>(builder.TextProvider);
-            builder.LoadResources(currentLanguage);
+            if (Enum.IsDefined(typeof(SupportedLanguages), currentLanguage))
+                builder.LoadResources(currentLanguage);
+            else
+                builder.LoadResources(string.Empty);
         }
     }
 }
