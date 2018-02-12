@@ -1,13 +1,21 @@
-﻿using MvvmCross.Core.ViewModels;
-using Internationalization.Core.ViewModels;
+﻿using Internationalization.Core.ViewModels;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 
 namespace Internationalization.Core
 {
-    public class AppStart : MvxNavigatingObject, IMvxAppStart
+    public class AppStart : IMvxAppStart
     {
+        private readonly IMvxNavigationService navigationService;
+
+        public AppStart(IMvxNavigationService navigationService)
+        {
+            this.navigationService = navigationService;
+        }
+
         public void Start(object hint = null)
         {
-            ShowViewModel<MainViewModel>();
+            navigationService.Navigate<MainViewModel>();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using MvvmCross.Plugin.JsonLocalization;
+﻿using MvvmCross.Plugins.JsonLocalization;
 using System.Collections.Generic;
 
 namespace Internationalization.Core.Services

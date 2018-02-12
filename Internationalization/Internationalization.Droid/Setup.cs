@@ -1,8 +1,8 @@
 using Android.Content;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Droid.Platform;
 using Internationalization.Core;
 using Java.Util;
+using MvvmCross.Platform.Android.Core;
+using MvvmCross.ViewModels;
 
 namespace Internationalization.Droid
 {

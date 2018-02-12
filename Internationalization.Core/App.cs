@@ -1,9 +1,9 @@
 ﻿using Internationalization.Core.Services;
-using MvvmCross;
-using MvvmCross.IoC;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Localization;
-using MvvmCross.Plugin.JsonLocalization;
-using MvvmCross.ViewModels;
+using MvvmCross.Platform;
+using MvvmCross.Platform.IoC;
+using MvvmCross.Plugins.JsonLocalization;
 using System;
 
 namespace Internationalization.Core
@@ -20,7 +20,7 @@ namespace Internationalization.Core
         }
 
         public void RegisterTextProvider(string currentLanguage)
-        {
+        { 
             var builder = new TextProviderBuilder();
             Mvx.RegisterSingleton<IMvxTextProviderBuilder>(builder);
             Mvx.RegisterSingleton<IMvxTextProvider>(builder.TextProvider);

@@ -1,9 +1,9 @@
-using MvvmCross.Platform.Plugins;
+using MvvmCross.Plugins;
 
 namespace Internationalization.Droid.Bootstrap
 {
     public class ResourceLoaderPluginBootstrap
-        : MvxPluginBootstrapAction<MvvmCross.Plugins.ResourceLoader.PluginLoader>
+        : MvxPluginBootstrapAction<MvvmCross.Plugin.ResourceLoader.PluginLoader>
     {
     }
 }

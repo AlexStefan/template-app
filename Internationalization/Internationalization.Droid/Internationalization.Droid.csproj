@@ -50,39 +50,6 @@
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
-    <Reference Include="MvvmCross.Binding, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\MonoAndroid\MvvmCross.Binding.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Binding.Droid, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\MonoAndroid\MvvmCross.Binding.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Core, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.5.6.3\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Droid, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.5.6.3\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Localization, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Platform, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.5.6.3\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Platform.Droid, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.5.6.3\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugins.Json, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.Json.5.6.3\lib\MonoAndroid\MvvmCross.Plugins.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugins.JsonLocalization, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.JsonLocalization.5.6.3\lib\MonoAndroid\MvvmCross.Plugins.JsonLocalization.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugins.ResourceLoader, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.ResourceLoader.5.6.3\lib\MonoAndroid\MvvmCross.Plugins.ResourceLoader.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugins.ResourceLoader.Droid, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.ResourceLoader.5.6.3\lib\MonoAndroid\MvvmCross.Plugins.ResourceLoader.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -123,8 +90,24 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\JsonLocalization\MvvmCross.Plugin.JsonLocalization.csproj">
+      <Project>{c1e4aa8e-93e1-4bbf-b030-a5d9a5f7d94a}</Project>
+      <Name>MvvmCross.Plugin.JsonLocalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\Json\MvvmCross.Plugin.Json.csproj">
+      <Project>{e0d9d0c1-2cc9-4435-ba7f-856b4c997128}</Project>
+      <Name>MvvmCross.Plugin.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj">
+      <Project>{8b91f4ac-04a6-4a7e-8fd9-5439d714d6e9}</Project>
+      <Name>MvvmCross.Plugin.ResourceLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mc\MvvmCross\MvvmCross.csproj">
+      <Project>{ac1a407f-2e89-4c79-86c9-de4636fba43c}</Project>
+      <Name>MvvmCross</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Internationalization.Core\Internationalization.Core.csproj">
-      <Project>{9ee5224b-d834-41f0-9db6-0b5642819d37}</Project>
+      <Project>{58d08be3-67c7-4610-b2ed-0a63756f262f}</Project>
       <Name>Internationalization.Core</Name>
     </ProjectReference>
   </ItemGroup>

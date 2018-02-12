@@ -134,11 +134,5 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Internationalization.Core\Internationalization.Core.csproj">
-      <Project>{9ee5224b-d834-41f0-9db6-0b5642819d37}</Project>
-      <Name>Internationalization.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace Internationalization.Core
+﻿using System.Collections.Generic;
+
+namespace Internationalization.Core
 {
     public static class Constants
     {

@@ -1,6 +1,6 @@
 using Android.App;
 using Android.OS;
-using MvvmCross.Droid.Views;
+using MvvmCross.Platform.Android.Views;
 
 namespace Internationalization.Droid.Views
 {
