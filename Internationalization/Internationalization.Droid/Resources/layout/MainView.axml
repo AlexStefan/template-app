@@ -13,5 +13,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Text TextSource, Converter=Language, ConverterParameter=DynamicText, Mode=OneTime" />
+        local:MvxBind="Text DynamicText" />
 </LinearLayout>
