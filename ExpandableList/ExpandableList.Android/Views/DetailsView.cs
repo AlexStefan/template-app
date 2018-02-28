@@ -10,14 +10,7 @@ namespace ExpandableList.Droid.Views
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            try
-            {
-                base.OnCreate(savedInstanceState);
-            }
-            catch (Exception ex)
-            {
-
-            }
+            base.OnCreate(savedInstanceState);
         }
     }
 }
