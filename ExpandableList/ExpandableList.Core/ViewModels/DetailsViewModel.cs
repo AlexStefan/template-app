@@ -1,5 +1,5 @@
 ﻿using ExpandableList.Models;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.ViewModels;
 
 namespace ExpandableList.Core.ViewModels
 {

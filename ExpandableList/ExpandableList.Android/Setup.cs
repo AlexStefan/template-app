@@ -1,7 +1,7 @@
 ﻿using Android.Content;
 using ExpandableList.Core;
-using MvvmCross.Droid.Platform;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Android.Core;
+using MvvmCross.ViewModels;
 
 namespace ExpandableList.Droid
 {

@@ -1,5 +1,5 @@
-﻿using MvvmCross.Core.ViewModels;
-using MvvmCross.Platform;
+﻿using MvvmCross;
+using MvvmCross.ViewModels;
 
 namespace ExpandableList.Core
 {

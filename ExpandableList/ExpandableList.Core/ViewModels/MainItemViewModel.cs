@@ -1,5 +1,5 @@
 ﻿using ExpandableList.Models;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Commands;
 using System.Collections.Generic;
 using System.Windows.Input;
 
@@ -33,7 +33,9 @@ namespace ExpandableList.Core.ViewModels
 
         private void FireSample(object obj)
         {
+#if DEBUG
             var onlyForDebug = "working";
+#endif
         }
 
         public MainItemViewModel(string title)

@@ -1,4 +1,6 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Commands;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
@@ -6,6 +8,7 @@ namespace ExpandableList.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel
     {
+        protected readonly IMvxNavigationService navigationService;
         private ObservableCollection<MainItemViewModel> items;
 
         public ObservableCollection<MainItemViewModel> Items
@@ -35,11 +38,12 @@ namespace ExpandableList.Core.ViewModels
         private void ShowMoreDetails(object obj)
         {
             var selectedItem = obj as DetailsItemViewModel;
-            ShowViewModel<DetailsViewModel, DetailsItemViewModel>(selectedItem);
+            navigationService.Navigate<DetailsViewModel, DetailsItemViewModel>(selectedItem);
         }
 
-        public MainViewModel()
+        public MainViewModel(IMvxNavigationService navigationService)
         {
+            this.navigationService = navigationService;
             Items = new ObservableCollection<MainItemViewModel>();
             for (int i = 0; i < 5; i++)
             {
