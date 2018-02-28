@@ -5,10 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\JsonLocalization\MvvmCross.Plugin.JsonLocalization.csproj" />
-    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\Json\MvvmCross.Plugin.Json.csproj" />
-    <ProjectReference Include="..\..\..\mc\MvvmCross.Plugins\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj" />
-    <ProjectReference Include="..\..\..\mc\MvvmCross\MvvmCross.csproj" />
+    <PackageReference Include="MvvmCross" Version="6.0.0-beta.3" />
+    <PackageReference Include="MvvmCross.Plugin.JsonLocalization" Version="6.0.0-beta.3" />
   </ItemGroup>
 
 </Project>
