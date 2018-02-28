@@ -33,9 +33,6 @@ namespace ExpandableList.Core.ViewModels
 
         private void FireSample(object obj)
         {
-#if DEBUG
-            var onlyForDebug = "working";
-#endif
         }
 
         public MainItemViewModel(string title)

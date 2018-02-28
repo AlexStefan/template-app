@@ -41,6 +41,22 @@ namespace ExpandableList.Core.ViewModels
             navigationService.Navigate<DetailsViewModel, DetailsItemViewModel>(selectedItem);
         }
 
+        private ICommand groupClickCommand;
+        public ICommand GroupClickCommand
+        {
+            get
+            {
+                if (groupClickCommand == null)
+                    groupClickCommand = new MvxCommand<object>(GroupClick);
+
+                return groupClickCommand;
+            }
+        }
+
+        private void GroupClick(object obj)
+        {
+        }
+
         public MainViewModel(IMvxNavigationService navigationService)
         {
             this.navigationService = navigationService;
