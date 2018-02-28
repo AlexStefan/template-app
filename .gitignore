@@ -251,3 +251,4 @@ paket-files/
 .idea/
 *.sln.iml
 TemplateMenu/Template.Droid/TemplateMenu.Droid.csproj.bak
+Internationalization/tools/*
