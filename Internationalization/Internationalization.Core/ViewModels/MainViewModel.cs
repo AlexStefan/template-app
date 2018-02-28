@@ -17,7 +17,7 @@ namespace Internationalization.Core.ViewModels
         {
             get
             {
-                return TextSource.GetText("DynamicValue");
+                return TextSource.GetText("DynamicValue");//builder.TextProvider.GetText("DynamicValue");
             }
         }
 
