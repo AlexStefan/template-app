@@ -6,7 +6,7 @@ This project contains an example of: GroupClick custom command, ItemClick(child)
 
 ExpandableList.Android [![Build status](https://ci.appveyor.com/api/projects/status/7ywguqmwjp04nrt5?svg=true)](https://ci.appveyor.com/project/AlexStefan/template-app-9vfss)
 
-ExpandableList.iOS
+ExpandableList.iOS ![Build status](https://build.appcenter.ms/v0.1/apps/d7fdf3f6-089f-417b-b671-82dad42799ee/branches/master/badge)
 
 ToDo list:
 
