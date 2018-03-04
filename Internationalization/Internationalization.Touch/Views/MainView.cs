@@ -1,8 +1,9 @@
-using MvvmCross.iOS.Views;
+using Internationalization.Core.ViewModels;
+using MvvmCross.Platform.Ios.Views;
 
-namespace Template.Touch.Views
+namespace Internationalization.Touch.Views
 {
-    public partial class MainView : MvxViewController
+    public partial class MainView : MvxViewController<MainViewModel>
     {
         public MainView() : base("MainView", null)
         {

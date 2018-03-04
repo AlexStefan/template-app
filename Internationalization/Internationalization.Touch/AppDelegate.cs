@@ -1,11 +1,11 @@
 ﻿using Foundation;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.iOS.Platform;
-using MvvmCross.iOS.Views.Presenters;
-using MvvmCross.Platform;
+using MvvmCross;
+using MvvmCross.Platform.Ios.Core;
+using MvvmCross.Platform.Ios.Presenters;
+using MvvmCross.ViewModels;
 using UIKit;
 
-namespace Template.Touch
+namespace Internationalization.Touch
 {
     [Register("AppDelegate")]
     public class AppDelegate : MvxApplicationDelegate
@@ -19,7 +19,7 @@ namespace Template.Touch
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
-
+            Window.RootViewController = new UIViewController();
             var presenter = new MvxIosViewPresenter(this, Window);
             var setup = new Setup(this, presenter);
             setup.Initialize();

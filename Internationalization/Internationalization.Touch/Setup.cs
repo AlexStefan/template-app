@@ -1,9 +1,9 @@
-using MvvmCross.Core.ViewModels;
-using MvvmCross.iOS.Platform;
-using MvvmCross.iOS.Views.Presenters;
-using Template.Core;
+using Internationalization.Core;
+using MvvmCross.Platform.Ios.Core;
+using MvvmCross.Platform.Ios.Presenters;
+using MvvmCross.ViewModels;
 
-namespace Template.Touch
+namespace Internationalization.Touch
 {
     public class Setup : MvxIosSetup
     {

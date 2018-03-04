@@ -1,6 +1,6 @@
 using UIKit;
 
-namespace Template.Touch
+namespace Internationalization.Touch
 {
     public class Application
     {
