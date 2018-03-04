@@ -28,12 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
-    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,10 +40,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Java.Interop" />
@@ -56,21 +47,6 @@
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
-    <Reference Include="MvvmCross, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.6.0.0-beta.3\lib\monoandroid80\MvvmCross.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.Json, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.Json.6.0.0-beta.3\lib\netstandard2.0\MvvmCross.Plugin.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.JsonLocalization, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.JsonLocalization.6.0.0-beta.3\lib\netstandard2.0\MvvmCross.Plugin.JsonLocalization.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.ResourceLoader, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.ResourceLoader.6.0.0-beta.3\lib\monoandroid80\MvvmCross.Plugin.ResourceLoader.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
@@ -78,6 +54,21 @@
     <Reference Include="System.Runtime" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="MvvmCross">
+      <HintPath>..\packages\MvvmCross.6.0.0-beta.4\lib\monoandroid80\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.ResourceLoader">
+      <HintPath>..\packages\MvvmCross.Plugin.ResourceLoader.6.0.0-beta.4\lib\monoandroid80\MvvmCross.Plugin.ResourceLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.Json">
+      <HintPath>..\packages\MvvmCross.Plugin.Json.6.0.0-beta.4\lib\netstandard2.0\MvvmCross.Plugin.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.JsonLocalization">
+      <HintPath>..\packages\MvvmCross.Plugin.JsonLocalization.6.0.0-beta.4\lib\netstandard2.0\MvvmCross.Plugin.JsonLocalization.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LinkerPleaseInclude.cs" />
