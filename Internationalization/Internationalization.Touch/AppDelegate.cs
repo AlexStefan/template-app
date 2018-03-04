@@ -19,7 +19,7 @@ namespace Internationalization.Touch
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            Window.RootViewController = new UIViewController();
+
             var presenter = new MvxIosViewPresenter(this, Window);
             var setup = new Setup(this, presenter);
             setup.Initialize();

@@ -6,7 +6,7 @@
 //
 using Foundation;
 
-namespace Template.Touch.Views
+namespace Internationalization.Touch.Views
 {
     [Register("MainView")]
     partial class MainView

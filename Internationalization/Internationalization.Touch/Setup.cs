@@ -1,3 +1,4 @@
+using Foundation;
 using Internationalization.Core;
 using MvvmCross.Platform.Ios.Core;
 using MvvmCross.Platform.Ios.Presenters;
@@ -14,7 +15,9 @@ namespace Internationalization.Touch
 
         protected override IMvxApplication CreateApp()
         {
-            return new App();
+            var app = new App();
+            app.RegisterTextProvider(NSLocale.CurrentLocale.LanguageCode);
+            return app;
         }
     }
 }

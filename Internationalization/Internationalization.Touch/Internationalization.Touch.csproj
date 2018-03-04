@@ -130,5 +130,22 @@
       <Name>Internationalization.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Strings\" />
+    <Folder Include="Assets\Strings\en\" />
+    <Folder Include="Assets\Strings\ro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\strings.json">
+      <Link>Assets\Strings\strings.json</Link>
+    </BundleResource>
+    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\en\strings.json">
+      <Link>Assets\Strings\en\strings.json</Link>
+    </BundleResource>
+    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\ro\strings.json">
+      <Link>Assets\Strings\ro\strings.json</Link>
+    </BundleResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
