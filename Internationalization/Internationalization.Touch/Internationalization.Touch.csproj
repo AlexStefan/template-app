@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Internationalization.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Template.Touch</AssemblyName>
+    <AssemblyName>Internationalization.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,6 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
 <CodesignKey>iPhone Developer</CodesignKey>
-<AssemblyName>Internationalization.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -34,7 +33,6 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-<AssemblyName>Internationalization.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +47,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -123,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <Content Include="..\Internationalization.Droid\Assets\Strings\strings.json">
+      <Link>Strings\strings.json</Link>
+    </Content>
+    <Content Include="..\Internationalization.Droid\Assets\Strings\en\strings.json">
+      <Link>Strings\en\strings.json</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Internationalization.Core\Internationalization.Core.csproj">
@@ -131,21 +136,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="Assets\Strings\" />
-    <Folder Include="Assets\Strings\en\" />
-    <Folder Include="Assets\Strings\ro\" />
+    <Folder Include="Strings\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\strings.json">
-      <Link>Assets\Strings\strings.json</Link>
-    </BundleResource>
-    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\en\strings.json">
-      <Link>Assets\Strings\en\strings.json</Link>
-    </BundleResource>
-    <BundleResource Include="..\Internationalization.Droid\Assets\Strings\ro\strings.json">
-      <Link>Assets\Strings\ro\strings.json</Link>
-    </BundleResource>
+    <EmbeddedResource Include="..\Internationalization.Droid\Assets\Strings\ro\strings.json">
+      <Link>Strings\ro\strings.json</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

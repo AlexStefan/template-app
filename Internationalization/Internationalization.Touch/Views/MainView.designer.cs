@@ -5,14 +5,33 @@
 // Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
+using System.CodeDom.Compiler;
 
 namespace Internationalization.Touch.Views
 {
-    [Register("MainView")]
+    [Register ("MainView")]
     partial class MainView
     {
-        void ReleaseDesignerOutlets()
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lbDynamic { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lbHello { get; set; }
+
+        void ReleaseDesignerOutlets ()
         {
+            if (lbDynamic != null) {
+                lbDynamic.Dispose ();
+                lbDynamic = null;
+            }
+
+            if (lbHello != null) {
+                lbHello.Dispose ();
+                lbHello = null;
+            }
         }
     }
 }

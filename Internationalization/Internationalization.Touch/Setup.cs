@@ -1,3 +1,4 @@
+using System.IO;
 using Foundation;
 using Internationalization.Core;
 using MvvmCross.Platform.Ios.Core;
@@ -16,6 +17,8 @@ namespace Internationalization.Touch
         protected override IMvxApplication CreateApp()
         {
             var app = new App();
+            var fileStream = File.Open("Strings/en/strings.json", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+
             app.RegisterTextProvider(NSLocale.CurrentLocale.LanguageCode);
             return app;
         }

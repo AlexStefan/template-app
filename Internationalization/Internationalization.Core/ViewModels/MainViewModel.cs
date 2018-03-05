@@ -17,13 +17,16 @@ namespace Internationalization.Core.ViewModels
         {
             get
             {
-                return TextSource.GetText("DynamicValue");//builder.TextProvider.GetText("DynamicValue");
+                return TextSource.GetText("DynamicValue");
             }
         }
 
         public IMvxLanguageBinder TextSource
         {
-            get { return new MvxLanguageBinder(Constants.GeneralNamespace, "strings"); }
+            get 
+            {
+                return new MvxLanguageBinder(Constants.GeneralNamespace, "strings");
+            }
         }
     }
 }

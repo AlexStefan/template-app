@@ -1,4 +1,5 @@
 using Internationalization.Core.ViewModels;
+using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platform.Ios.Views;
 
 namespace Internationalization.Touch.Views
@@ -20,6 +21,10 @@ namespace Internationalization.Touch.Views
         {
             base.ViewDidLoad();
 
+            //this.CreateBinding(lbHello).To((MainViewModel vm) => vm.).Apply();
+            this.CreateBinding(lbDynamic).To((MainViewModel vm) => vm.DynamicText).Apply();
+            this.BindLanguage(lbHello, "Strings", "Hello");
+            //this.BindLanguage(lbDynamic, "Strings", ViewModel.DynamicText);
             // Perform any additional setup after loading the view, typically from a nib.
         }
     }
