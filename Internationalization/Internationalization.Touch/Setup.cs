@@ -1,8 +1,10 @@
-using System.IO;
 using Foundation;
 using Internationalization.Core;
+using MvvmCross;
+using MvvmCross.Base;
 using MvvmCross.Platform.Ios.Core;
 using MvvmCross.Platform.Ios.Presenters;
+using MvvmCross.Plugin.Json;
 using MvvmCross.ViewModels;
 
 namespace Internationalization.Touch
@@ -17,10 +19,14 @@ namespace Internationalization.Touch
         protected override IMvxApplication CreateApp()
         {
             var app = new App();
-            var fileStream = File.Open("Strings/en/strings.json", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-
             app.RegisterTextProvider(NSLocale.CurrentLocale.LanguageCode);
             return app;
         }
-    }
+
+		protected override void InitializeFirstChance()
+		{
+            Mvx.RegisterSingleton<IMvxJsonConverter>(new MvxJsonConverter());
+            base.InitializeFirstChance();
+		}
+	}
 }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internationalization.Droid"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internationalization.Touch", "Internationalization.Touch\Internationalization.Touch.csproj", "{B4234D44-AF7C-4C9A-9B6F-D59B0DF71A00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internationalization.Core", "Internationalization.Core\Internationalization.Core.csproj", "{58D08BE3-67C7-4610-B2ED-0A63756F262F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internationalization.Core", "Internationalization.Core\Internationalization.Core.csproj", "{58D08BE3-67C7-4610-B2ED-0A63756F262F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
