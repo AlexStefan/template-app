@@ -131,6 +131,9 @@
     <Content Include="..\Internationalization.Droid\Assets\Strings\en\strings.json">
       <Link>Strings\en\strings.json</Link>
     </Content>
+    <Content Include="..\Internationalization.Droid\Assets\Strings\ro\strings.json">
+      <Link>Strings\ro\strings.json</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Internationalization.Core\Internationalization.Core.csproj">
@@ -140,11 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Strings\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\Internationalization.Droid\Assets\Strings\ro\strings.json">
-      <Link>Strings\ro\strings.json</Link>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

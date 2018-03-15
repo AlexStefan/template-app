@@ -19,7 +19,8 @@ namespace Internationalization.Touch
         protected override IMvxApplication CreateApp()
         {
             var app = new App();
-            app.RegisterTextProvider(NSLocale.CurrentLocale.LanguageCode);
+            //It seems that the language code keeps en for some unkown reason. Workaround for the moment with using the country code.
+            app.RegisterTextProvider(NSLocale.CurrentLocale.CountryCode.ToLower());
             return app;
         }
 
