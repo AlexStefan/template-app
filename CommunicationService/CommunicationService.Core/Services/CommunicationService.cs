@@ -1,8 +1,6 @@
 ﻿using CommunicationService.Core.Factories.Interfaces;
-using CommunicationService.Models;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -38,7 +36,7 @@ namespace CommunicationService.Core.Services
                     var response = await client.GetAsync(string.Format(route, parameters), cts.Token);
                     if (response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        await RenewAccessTokenIfNeeded();
+                        //await RenewAccessTokenIfNeeded();
 
                         response.Dispose();
                         response = await client.GetAsync(string.Format(route, parameters), cts.Token);
@@ -133,7 +131,7 @@ namespace CommunicationService.Core.Services
                     var response = await client.PostAsync(string.Format(route, parameters), requestContent, cts.Token);
                     if (response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        await RenewAccessTokenIfNeeded();
+                        //await RenewAccessTokenIfNeeded();
 
                         response.Dispose();
                         response = await client.PostAsync(string.Format(route, parameters), requestContent, cts.Token);
@@ -193,7 +191,7 @@ namespace CommunicationService.Core.Services
 
                     if (response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        await RenewAccessTokenIfNeeded();
+                        //await RenewAccessTokenIfNeeded();
 
                         response.Dispose();
                         response = await client.PutAsync(string.Format(route, parameters), requestContent, cts.Token);
@@ -250,7 +248,7 @@ namespace CommunicationService.Core.Services
 
                     if (response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        await RenewAccessTokenIfNeeded();
+                        //await RenewAccessTokenIfNeeded();
 
                         response.Dispose();
                         response = await client.DeleteAsync(string.Format(route, parameters), cts.Token);
@@ -270,62 +268,6 @@ namespace CommunicationService.Core.Services
                     //    return default(T);
 
                     return JsonConvert.DeserializeObject<T>(data);
-                }
-                catch (TaskCanceledException ex)
-                {
-                    if (ex.CancellationToken != cts.Token)
-                    {
-                        throw new EntryPointNotFoundException();
-                    }
-                    //TODO Check how to properly throw this kind of exception
-                    throw ex;
-                }
-                catch (JsonException ex)
-                {
-                    //TODO Check how to properly throw this kind of exception
-                    throw ex;
-                }
-                catch (Exception ex)
-                {
-                    //TODO Check how to properly throw this kind of exception
-                    throw ex;
-                }
-            }
-        }
-
-        protected async Task<Token> RenewAccessTokenIfNeeded()
-        {
-            //TODO Save session in SharedPrefs
-            var token = new Token();
-            //var session = AppSettings.Session;
-
-            if (token == null || string.IsNullOrWhiteSpace(token.RefreshToken) || !token.IsExpired)
-                throw new UnauthorizedAccessException();
-
-            var cts = new CancellationTokenSource();
-            //TODO Create a setting for this
-            cts.CancelAfter(1000000);
-
-                var content = new FormUrlEncodedContent(new Dictionary<string, string>{
-                    { "grant_type", "refresh_token" },
-                    { "refresh_token", token.RefreshToken }
-                });
-
-            using (var client = await GetClient(false))
-            {
-                try
-                {
-                    var response = await client.PostAsync("www.endpoint.com/token", content, cts.Token);
-                    var data = await response.Content.ReadAsStringAsync();
-
-                    //TODO Create the throw exception for all status codes
-                    //await ThrowExceptionIfServerError<StandardErrorResponse>(response.StatusCode, data);
-
-                    //TODO check what happens when NotFound is returned
-                    //if (response.StatusCode == HttpStatusCode.NotFound)
-                    //    return default(T);
-
-                    return JsonConvert.DeserializeObject<Token>(data);
                 }
                 catch (TaskCanceledException ex)
                 {
