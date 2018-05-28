@@ -1,6 +1,5 @@
-﻿using MvvmCross.Core.ViewModels;
-using MvvmCross.Platform;
-using System;
+﻿using MvvmCross;
+using MvvmCross.ViewModels;
 
 namespace CommunicationService.Core
 {

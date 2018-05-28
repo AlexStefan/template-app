@@ -252,3 +252,6 @@ paket-files/
 *.sln.iml
 TemplateMenu/Template.Droid/TemplateMenu.Droid.csproj.bak
 Internationalization/tools/*
+CommunicationService/tools/*
+ExpandableList/tools/*
+*.bak
