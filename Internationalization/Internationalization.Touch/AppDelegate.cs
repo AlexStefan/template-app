@@ -16,17 +16,7 @@ namespace Internationalization.Touch
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-			var result = base.FinishedLaunching(application, launchOptions);
-
-            //CustomizeAppearance();
-
-            return result;
+			return base.FinishedLaunching(application, launchOptions);
         }
-
-		private void CustomizeAppearance()
-		{
-			//Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            Window.MakeKeyAndVisible();
-		}
     }
 }

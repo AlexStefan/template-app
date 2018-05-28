@@ -98,6 +98,7 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Views\MainView.xib" />
     <None Include="packages.config" />
+    <Compile Include="Helpers\AppInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Strings\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

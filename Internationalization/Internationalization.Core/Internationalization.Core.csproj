@@ -9,4 +9,7 @@
     <PackageReference Include="MvvmCross.Plugin.JsonLocalization" Version="6.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
 </Project>
