@@ -13,10 +13,8 @@ namespace Internationalization.Core
         public override void Initialize()
         {
             CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
-
-            Mvx.ConstructAndRegisterSingleton<IMvxAppStart, AppStart>();
-            var appStart = Mvx.Resolve<IMvxAppStart>();
-            RegisterAppStart(appStart);
+			RegisterCustomAppStart<AppStart>();
+			RegisterTextProvider("en");
         }
 
         public void RegisterTextProvider(string currentLanguage)

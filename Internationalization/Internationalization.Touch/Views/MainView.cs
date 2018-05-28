@@ -1,9 +1,11 @@
 using Internationalization.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
-using MvvmCross.Platform.Ios.Views;
+using MvvmCross.Platforms.Ios.Presenters.Attributes;
+using MvvmCross.Platforms.Ios.Views;
 
 namespace Internationalization.Touch.Views
 {
+    [MvxRootPresentation]
     public partial class MainView : MvxViewController<MainViewModel>
     {
         public MainView() : base("MainView", null)

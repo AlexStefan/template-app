@@ -4,16 +4,16 @@ using MvvmCross.ViewModels;
 
 namespace Internationalization.Core
 {
-    public class AppStart : IMvxAppStart
+    public class AppStart : MvxAppStart
     {
         private readonly IMvxNavigationService navigationService;
 
-        public AppStart(IMvxNavigationService navigationService)
-        {
+		public AppStart(IMvxApplication application, IMvxNavigationService navigationService) : base(application)
+		{
             this.navigationService = navigationService;
-        }
+		}
 
-        public void Start(object hint = null)
+		protected override void Startup(object hint = null)
         {
             navigationService.Navigate<MainViewModel>();
         }

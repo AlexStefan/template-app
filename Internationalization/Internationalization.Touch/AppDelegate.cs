@@ -1,14 +1,12 @@
 ﻿using Foundation;
-using MvvmCross;
-using MvvmCross.Platform.Ios.Core;
-using MvvmCross.Platform.Ios.Presenters;
-using MvvmCross.ViewModels;
+using Internationalization.Core;
+using MvvmCross.Platforms.Ios.Core;
 using UIKit;
 
 namespace Internationalization.Touch
 {
-    [Register("AppDelegate")]
-    public class AppDelegate : MvxApplicationDelegate
+	[Register("AppDelegate")]
+	public class AppDelegate : MvxApplicationDelegate<Setup, App>
     {
         public override UIWindow Window
         {
@@ -18,18 +16,17 @@ namespace Internationalization.Touch
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            Window = new UIWindow(UIScreen.MainScreen.Bounds);
+			var result = base.FinishedLaunching(application, launchOptions);
 
-            var presenter = new MvxIosViewPresenter(this, Window);
-            var setup = new Setup(this, presenter);
-            setup.Initialize();
+            //CustomizeAppearance();
 
-            var startup = Mvx.Resolve<IMvxAppStart>();
-            startup.Start();
-
-            Window.MakeKeyAndVisible();
-
-            return true;
+            return result;
         }
+
+		private void CustomizeAppearance()
+		{
+			//Window = new UIWindow(UIScreen.MainScreen.Bounds);
+            Window.MakeKeyAndVisible();
+		}
     }
 }
