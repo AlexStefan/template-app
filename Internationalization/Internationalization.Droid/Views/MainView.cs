@@ -1,16 +1,19 @@
 using Android.App;
 using Android.OS;
-using MvvmCross.Platform.Android.Views;
+using Internationalization.Core.ViewModels;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Presenters.Attributes;
 
 namespace Internationalization.Droid.Views
 {
-    [Activity(Label = "MainView", MainLauncher = true)]
-    public class MainView : MvxActivity
+	[MvxActivityPresentation]
+    [Activity(Label = "MainView")]
+	public class MainView : MvxAppCompatActivity<MainViewModel>
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.MainView);
+			SetContentView(Resource.Layout.MainView);
         }
     }
 }

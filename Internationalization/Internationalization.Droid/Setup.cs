@@ -1,22 +1,21 @@
-using Android.Content;
 using Internationalization.Core;
-using Java.Util;
-using MvvmCross.Platform.Android.Core;
-using MvvmCross.ViewModels;
+using Internationalization.Core.Helpers;
+using Internationalization.Droid.Helpers;
+using MvvmCross;
+using MvvmCross.Base;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Plugin.Json;
 
 namespace Internationalization.Droid
 {
-    public class Setup : MvxAndroidSetup
-    {
-        public Setup(Context applicationContext) : base(applicationContext)
+	public class Setup : MvxAppCompatSetup<App>
+	{
+        protected override void InitializeFirstChance()
         {
-        }
+            base.InitializeFirstChance();
 
-        protected override IMvxApplication CreateApp()
-        {
-            var app = new App();
-            app.RegisterTextProvider(Locale.Default.Language);
-            return app;
+            Mvx.RegisterType<IMvxJsonConverter, MvxJsonConverter>();
+            Mvx.RegisterType<IAppInfo, AppInfo>();
         }
     }
 }
