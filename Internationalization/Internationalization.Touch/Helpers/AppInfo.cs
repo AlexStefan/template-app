@@ -5,6 +5,12 @@ namespace Internationalization.Touch.Helpers
 {
 	public class AppInfo : IAppInfo
     {
-		public string CurrentLanguage => NSLocale.CurrentLocale.CountryCode.ToLower();
+		public string CurrentLanguage
+        {
+            get
+            {
+                return NSLocale.CurrentLocale.LanguageCode.ToLower();
+            }
+        }
 	}
 }
