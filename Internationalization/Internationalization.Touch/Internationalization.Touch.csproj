@@ -97,32 +97,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Views\MainView.xib" />
-    <None Include="packages.config" />
     <Compile Include="Helpers\AppInfo.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross">
-      <HintPath>..\packages\MvvmCross.6.0.1\lib\xamarinios10\MvvmCross.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.File">
-      <HintPath>..\packages\MvvmCross.Plugin.File.6.0.1\lib\xamarinios10\MvvmCross.Plugin.File.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.ResourceLoader">
-      <HintPath>..\packages\MvvmCross.Plugin.ResourceLoader.6.0.1\lib\xamarinios10\MvvmCross.Plugin.ResourceLoader.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.Json">
-      <HintPath>..\packages\MvvmCross.Plugin.Json.6.0.1\lib\netstandard2.0\MvvmCross.Plugin.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.JsonLocalization">
-      <HintPath>..\packages\MvvmCross.Plugin.JsonLocalization.6.0.1\lib\netstandard2.0\MvvmCross.Plugin.JsonLocalization.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>

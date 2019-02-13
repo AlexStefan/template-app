@@ -1,5 +1,6 @@
 ﻿using Internationalization.Core.Helpers;
 using Internationalization.Core.Services;
+using Internationalization.Core.ViewModels;
 using MvvmCross;
 using MvvmCross.IoC;
 using MvvmCross.Localization;
@@ -14,8 +15,8 @@ namespace Internationalization.Core
         public override void Initialize()
         {
             CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
-			RegisterCustomAppStart<AppStart>();
-			RegisterTextProvider(Mvx.Resolve<IAppInfo>().CurrentLanguage);
+			RegisterAppStart<MainViewModel>();
+            RegisterTextProvider(Mvx.Resolve<IAppInfo>().CurrentLanguage);
         }
 
         public void RegisterTextProvider(string currentLanguage)
